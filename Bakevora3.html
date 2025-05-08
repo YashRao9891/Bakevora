@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bakevora - Coming Soon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Quicksand', sans-serif;
+      background: url('BakingImage.png') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .overlay {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(8px);
+      border-radius: 30px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+      padding: 50px 40px;
+      max-width: 600px;
+      width: 90%;
+      text-align: center;
+      animation: fadeIn 1.2s ease-out;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.5rem;
+      color: #b35c68;
+      margin-bottom: 10px;
+    }
+
+    .tagline {
+      font-size: 1.6rem;
+      font-style: italic;
+      color: #5a444a;
+      margin-bottom: 20px;
+    }
+
+    .intro {
+      font-size: 1.05rem;
+      color: #444;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .notify-box {
+      margin: 25px 0;
+    }
+
+    input[type="email"] {
+      padding: 10px 15px;
+      width: 70%;
+      max-width: 300px;
+      border: none;
+      border-radius: 20px;
+      font-size: 1rem;
+      margin-right: 8px;
+    }
+
+    button {
+      padding: 10px 18px;
+      border: none;
+      background-color: #b35c68;
+      color: white;
+      border-radius: 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #8e4350;
+    }
+
+    .contact {
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 30px;
+      border-top: 1px solid #ccc;
+      padding-top: 20px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 500px) {
+      h1 { font-size: 2.7rem; }
+      .tagline { font-size: 1.2rem; }
+      .intro, input, button { font-size: 0.95rem; }
+      input[type="email"] {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>Bakevora</h1>
+    <div class="tagline">Baked with Love & Joy</div>
+    <div class="intro">
+      We’re baking up something special just for you! <br/>
+      At Bakevora, every bite is crafted with warmth, quality, and passion.
+      From cookies to cakes and beyond — we can't wait to sweeten your day!
+    </div>
+	<form action="https://docs.google.com/forms/d/e/1FAIpQLSczLR2zGQUwshRA8kt7tqS_01khgDJ7a0t6y_1sX5Zak7MupA/formResponse" method="POST" target="_blank" class="notify-box">
+	  <input type="email" name="entry.1056746495" placeholder="Enter your email" required />
+	  <button type="submit">Notify Me</button>
+	</form>
+    <div class="contact">
+      Contact: yashrao9205@gmail.com<br>
+      +91-9911529797
+    </div>
+  </div>
+</body>
+</html>
